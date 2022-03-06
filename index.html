@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <label for="num">Average:</label>
+        <input type="number" name="" id="num" placeholder="Type the average">
+        <label for="num">Number of generated values:</label>
+        <input type="number" min="2" max="10" pattern="\d*" id="quantity"  placeholder="How many numbers?(2-10)">
+        <div class="btn">
+            <button id="calc">Calculate</button>
+        </div>
+        <div class="result">
+
+            <ul id="nums"></ul>
+            <div class="div">  </div>
+        </div>
+
+    </div>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        *{
+            box-sizing: border-box;
+
+        }
+        .container{
+            max-width: 360px;
+            box-sizing: border-box;
+            margin: 100px auto;
+            padding: 40px 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 14px;
+        }
+        .container input{
+            display: block;
+            width: 100%;
+            margin: 5px 0 15px 0;
+            background-color: rgb(216, 210, 210);
+            border: none;
+            padding: 10px 10px;
+            outline: none;
+        }
+        
+        .btn{
+            text-align: center;
+            margin-top: 30px;
+        }
+        #calc{
+            background-color: tomato;
+            color: #fff;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 14px;
+        }
+        .result{
+            margin-top: 20px;
+        }
+    </style>
+
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
